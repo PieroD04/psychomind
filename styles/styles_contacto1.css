@@ -1,0 +1,38 @@
+@media only screen and (max-width: 1500px) {
+    h2 {
+        font-size: 55px;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    #formNombre,
+    #formCorreo,
+    #formAsunto {
+        width: 100%;
+        max-width: 700px;
+        margin-bottom: 15px;
+        margin: left 0;
+    }
+
+    #formMensaje {
+        width: 100%;
+        max-width: 700px;
+        margin-left: 0px;
+    }
+
+    input[type="text"],
+    input[type="submit"] {
+        font-size: 18px;
+    }
+
+    .formImagen {
+        width: 30%;
+        max-width: 300px;
+        height: 600;
+        margin-left: 0;
+        margin-top: 5px;
+        margin-left: 0px;
+    }
+}

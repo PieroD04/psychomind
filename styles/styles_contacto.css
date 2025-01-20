@@ -1,0 +1,166 @@
+.contactoFormulario {
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+h2 {
+    color: #274B92;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 85px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+
+    text-align: center;
+    padding-top: 80px;
+
+    margin:0px;
+}
+
+label {
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+#formNombre {
+    width: 720px;
+    height: 40px;
+    flex-shrink: 0;
+
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.50);
+    background: #FFF;
+}
+
+#formCorreo {
+    width: 720px;
+    height: 40px;
+    flex-shrink: 0;
+
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.50);
+    background: #FFF;
+}
+
+#formAsunto {
+    width: 720px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.50);
+    background: #FFF;
+}
+
+#formAMensaje {
+    width: 720px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.50);
+    background: #FFF;
+}
+
+input[type="text"] {
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+input[type="submit"] {
+    /*Tamaño del boton*/
+    width: 299px;
+    height: 62px;
+
+    flex-shrink: 0;
+
+    /*Texto*/
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    /*Color del boton*/
+    background-color: #1D95C8;
+
+    /*Bordes*/
+    border: hidden;
+    border-radius: 11px;
+}
+
+.botonForm {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.botonForm :hover{
+    background-color: #0056b3;
+}
+
+.formImagen {
+
+    width: 80%; /* Ajusta el ancho máximo de la imagen según sea necesario */
+    max-width: 600px; /* Establece un límite máximo para el ancho de la imagen */
+    height: auto; /* Para mantener la proporción de la imagen al cambiar el ancho */
+    display: block;
+    margin: 20px auto; /* Esto centra la imagen horizontalmente con márgenes superior e inferior de 20px */
+    
+
+}
+
+
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 750px) {
+    h2 {
+        font-size: 70px;
+    }
+
+    label {
+        font-size: 20px;
+    }
+    
+    .contactoFormulario{
+        margin-left: 15px;
+    }
+
+    #formNombre,
+    #formCorreo,
+    #formAsunto {
+        width: 90%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    #formMensaje {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    input[type="text"],
+    input[type="submit"] {
+        font-size: 18px;
+    }
+
+}
+
+@media only screen and (max-width: 400px)
+{
+    h2{
+        font-size: 60px;
+    }
+
+    input[type="submit"]{
+        width: 200px;
+        height: 50px;
+    }
+}

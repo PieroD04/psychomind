@@ -1,0 +1,150 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.subtitle-us {
+    text-align: center;
+    color: #274B92;
+    font-weight: 600;
+    font-size: 85px;
+    margin: 15px;
+}
+
+.first_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.second_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.image_nosotros {
+    /* width: 80% !important; */
+    width: 590px;
+    height: 270px;
+    object-fit: cover;
+    /* object-position: left; */
+    border-radius: 5px;
+    margin-right: 20px;
+    margin: 0px 50px;
+}
+
+/* Estilo para el cuadro que contiene el texto */
+.texto {
+    width: 590px;
+    height: 270px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 300;
+    /*Centrar texto verticalmente*/
+    display: flex;
+    align-items: center;
+    margin: 0px 50px;
+}
+
+/* Estilo para los cuadros que contienen el texto */
+
+.texto_uno {
+    background-color: #1A6FAC;
+    color: #fff;
+    text-align: center;
+}
+
+.texto_dos {
+    background-color: #274B92;
+    color: #fff;
+    text-align: center;
+}
+
+/*Video*/
+.video-container {
+    max-width: 600px;
+    width: 100%;
+    padding: 45px 20px;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1A6FAC;
+    border-radius: 15px;
+}
+
+.video-container .title-us {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.video-container iframe {
+    border-radius: 5px;
+    width: 70%;
+    max-height: 360px;
+    max-width: 560px;
+    /* Ajusta el ancho máximo según tus necesidades */
+}
+
+/*RESPONSIVE DESIGN*/
+@media (max-width: 1105px) {
+
+    .first_section,
+    .second_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 670px) {
+    .subtitle-us {
+        font-size: 35px;
+    }
+
+    .first_section {
+        margin-bottom: 50px;
+    }
+
+    .texto {
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        font-size: 0.2rem;
+        font-weight: 300;
+        /* margin-right: 1em; */
+    }
+
+    .image_nosotros {
+        width: 300px;
+        height: 270px;
+        object-fit: cover;
+        border-radius: 5px;
+        margin-right: 20px;
+        margin: 0px 50px;
+    }
+
+    .video-container .title-us {
+        font-size: 1.4rem;
+    }
+
+    .texto p {
+        font-size: 15px;
+    }
+
+    .texto {
+        width: 90%;
+    }
+
+    .video-container {
+        border-radius: 5px;
+        width: 90% !important;
+        /* max-height: 360px; */
+        /* max-width: 560px; */
+        /* Ajusta el ancho máximo según tus necesidades */
+    }
+}

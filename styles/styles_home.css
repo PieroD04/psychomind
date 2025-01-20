@@ -1,0 +1,229 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serlf;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    margin: 30px 0;
+    position: relative;
+}
+
+h1 {
+    color: #274B92;
+    font-family: Roboto;
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 700;
+    /* margin: 30px 0 5% 0; */
+}
+
+h2 {
+    color: #274B92;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    /* margin: 0 0 6.5% 0; */
+}
+
+h3 {
+    color: #1D95C8;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+button {
+    border-radius: 11px;
+    background: #1D95C8;
+    width: 20%;
+    min-width: 250px;
+    padding: 1% 2.5%;
+    /* height: 73px; */
+    /* margin: 6% 0 0 42.5%; */
+}
+
+button a {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#register {
+    width: 100%;
+    font-size: 25px;
+    /* margin: 1% 0 30px 39.9%; */
+}
+
+h2 a {
+    text-decoration: none;
+    font-family: Roboto;
+    color: #274B92;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#welcome {
+    /* width: 729px; */
+    width: 40%;
+    /* margin: 0 5% 0 31%; */
+}
+
+#lema {
+    /* width: 750px; */
+    width: 40%;
+    /* margin: 3% 5% 0 31%; */
+
+}
+
+#img1 {
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    width: 12%;
+}
+
+#img2 {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 20%;
+}
+
+#img3 {
+    width: 12%;
+    position: absolute;
+    top: 5%;
+    right: 0%;
+}
+
+#img4 {
+    width: 20%;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+}
+
+#img1,
+#img2,
+#img3,
+#img4 {
+    animation-name: aparecer;
+    animation-duration: 1.25s;
+    animation-timing-function: linear;
+}
+
+.descargas h2 {
+    color: #1281b7;
+    font-weight: 520;
+}
+
+.descargas-img {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+#descarga-ios, #descarga-android {
+    width: 100%;
+    object-fit: contain;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 375px) {
+    h1 {
+        font-size: 35px !important;
+    }
+
+    h2 {
+        font-size: 25px !important;
+    }
+
+    h3 {
+        font-size: 22.5px !important;
+
+    }
+}
+
+
+@media (max-width: 620px) {
+    h1 {
+        font-size: 45px;
+    }
+
+    h2 {
+        font-size: 35px;
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 25px;
+        width: 90% !important;
+    }
+
+    button a {
+        font-size: 25px;
+    }
+
+    #register {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    #img1,
+    #img3,
+    #img2,
+    #img4 {
+        display: none;
+    }
+
+    /*     #img1,
+    #img3 {
+        z-index: -10;
+        width: 30%;
+        top: 50%;
+    } */
+}
+
+@media (max-width: 768px) {
+    h2 {
+        width: 100% !important;
+    }
+
+    #img2,
+    #img4 {
+        display: none;
+    }
+
+    #img1,
+    #img3 {
+        z-index: -10;
+        width: 22.5%;
+        top: 50%;
+    }
+}

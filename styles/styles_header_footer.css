@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serlf;
+    font-size: 20px;
+}
+
+/*HEADER NAVBAR*/
+.header {
+    position: relative;
+    padding: 1rem 2rem;
+    /* background-color: #1A6FAC; */
+    background-image: linear-gradient(to bottom, #1a6fac, #50a9e0);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.header .navbar a:hover {
+    color: #7FD8E6;
+}
+
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.header .navbar .toggle_btn {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn {
+    background-color: #50a9e0;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.action_btn:hover {
+    scale: 1.05;
+    background-color: #274B92;
+}
+
+.action_btn:active {
+    scale: 0.95;
+}
+
+/*DROPDOWN MENU*/
+.dropdown_menu {
+    position: absolute;
+    z-index: 5;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 265px;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*RESPONSIVE DESIGN*/
+
+@media (max-width: 1024px) {
+    #redes {
+        margin-bottom: 1.5%;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .navbar .links,
+    .navbar .action_btn {
+        display: none;
+    }
+
+    .header .navbar .toggle_btn,
+    .dropdown_menu {
+        display: block;
+    }
+
+    .dropdown_menu a {
+        text-decoration: none;
+        color: #000;
+        /*PARA QUE SE VEA MÁS ESTETICOO*/
+        font-size: 1rem;
+    }
+
+
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: radial-gradient(circle, #fff, #c2dff5);
+}
+
+main {
+    flex-grow: 1;
+}
+
+/*FOOTER*/
+.footer {
+    /* background-color: #1A6FAC; */
+    background-image: linear-gradient(to top, #1a6fac, #50a9e0);
+    color: #fff;
+    padding: 7.5px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 65%;
+}
+
+#redes img {
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+}
+
+#redes {
+    display: flex;
+    align-items: center;
+    /* margin-left: 30px; */
+    /* margin-right: 50%; */
+}
+
+#ig {
+    margin-right: 15px;
+}
+
+#redes img:hover {
+    animation-name: img-hover;
+    animation-duration: 0.85s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes img-hover {
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+#tiktok {
+    margin-right: 10px;
+}
+
+#fb {
+    margin-right: 10px;
+}
+
+#privacidad-terminos {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 13.5px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* width: 10%; */
+}
+
+#privacidad-terminos a {
+    display: flex;
+    width: 120px;
+    /* padding-right: 20px; */
+}
+
+#logo {
+    margin: 0 0 0 35.5px;
+}

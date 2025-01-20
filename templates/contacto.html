@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../styles/styles_contacto.css">   
+    <link rel="stylesheet" href="../styles/styles_header_footer.css">
+    <script src="https://kit.fontawesome.com/829f2fe815.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../assets/icons/favicon.ico">
+</head>
+
+<body>
+    <header class="header">
+        <div class="navbar">
+            <div class="logo"><img src="../assets/icons/logo.svg" alt="Logo"></div>
+            <ul class="links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href=" nosotros.html">Nosotros</a></li>
+                <li><a href="membresias.html">Membresías</a></li>
+                <li><a href="evaluaciones.html">Evaluaciones</a></li>
+            </ul>
+            <a href="contacto.html" class="action_btn">Contacto</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="membresias.html">Membresías</a></li>
+            <li><a href="evaluaciones.html">Evaluaciones</a></li>
+            <li><a href="contacto.html" class="action_btn">Contacto</a></li>
+        </div>
+    </header>
+    <main>
+        <h2>CONTACTO</h2>
+
+        <div class="contactoFormulario">
+            <form>
+                <label for="formNombre">Nombre completo: </label><br>
+                <input type="text" id="formNombre" placeholder="Ingresa tu nombre"><br>
+                <label for="formCorreo">Correo electrónico: </label><br>
+                <input type="text" id="formCorreo" placeholder="Ingresa tu correo" required><br>
+                <label for="formAsunto">Asunto: </label><br>
+                <input type="text" id="formAsunto" placeholder="Ingresa el asunto" required><br>
+                <label for="formMensaje">Mensaje: </label><br>
+                <textarea id="formMensaje" cols="70" rows="9" placeholder="Introduce tu mensaje" required></textarea>
+                <div class="botonForm">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+
+        </div>
+
+        <img class="formImagen"
+            src="https://gestion.pe/resizer/NI2UEEFuiObaIF7SV3YGUV-n8-o=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/VI6BXCYGY5FGJF2JLFZ5DX322E.jpg"
+            alt="Imagen de Servicio al Cliente" />
+
+    </main>
+</body>
+<footer class="footer">
+	<div id="redes">
+		<a href="https://www.instagram.com">
+			<img id="ig" src="../assets/icons/instagram.png" width="30px" alt="Instagram">
+		</a>
+		<a href="https://www.tiktok.com">
+			<img id="tiktok" src="../assets/icons/tik-tok.png" width="30px" alt="TikTok">
+		</a>
+		<a href="https://www.facebook.com">
+			<img id="fb" src="../assets/icons/facebook.png" width="30px" alt="Facebook">
+		</a>
+		<a href="https://twitter.com">
+			<img id="twitter" src="../assets/icons/twitter.png" width="30px" alt="Twitter">
+		</a>
+	</div>
+	<div id="privacidad-terminos">
+		<a href="#" id="privacidad">AVISO DE PRIVACIDAD</a>
+		<a href="#">TERMINOS Y CONDICIONES</a>
+	</div>
+</footer>
+<!--JAVASCRIPT-->
+<script src="../scripts/header.js"></script>
+
+</html>

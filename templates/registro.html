@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psycho-Mind</title>
+    <link rel="stylesheet" href="../styles/styles-registro.css">
+    <link rel="stylesheet" href="../styles/styles_header_footer.css">
+    <script src="https://kit.fontawesome.com/829f2fe815.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../assets/icons/favicon.ico">
+</head>
+
+
+<body>
+    <header class="header">
+        <div class="navbar">
+            <div class="logo"><img src="../assets/icons/logo.svg" alt=""></div>
+            <ul class="links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href=" nosotros.html">Nosotros</a></li>
+                <li><a href="membresias.html">Membresías</a></li>
+                <li><a href="evaluaciones.html">Evaluaciones</a></li>
+            </ul>
+            <a href="contacto.html" class="action_btn">Contacto</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="membresias.html">Membresías</a></li>
+            <li><a href="evaluaciones.html">Evaluaciones</a></li>
+            <li><a href="contacto.html" class="action_btn">Contacto</a></li>
+        </div>
+    </header>
+    <main>
+        <div id="registro-form">
+            <!--  <div id="div-img">
+                <img id="registro-img" src="../images/registro.jpg" alt="registro">
+            </div>
+            <div id="linea"></div> -->
+            <form action="" id="form-register">
+                <h2>Crear una cuenta</h2>
+                <input id="nombres" type="text" placeholder="Nombres">
+                <input id="apellidos" type="text" placeholder="Apellidos">
+                <input id="correo" type="email" placeholder="Correo">
+                <input id="contraseña" type="password" placeholder="Contraseña">
+                <input id="contraseña2" type="password" placeholder="Confirmar contraseña">
+                <div id="botones">
+                    <button id="boton-register">Confirmar</button>
+                    <div class="login-link">
+                        <p>¿Ya tienes una cuenta?</p>
+                        <a href="login.html">Inicia sesión</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+<footer class="footer">
+	<div id="redes">
+		<a href="https://www.instagram.com">
+			<img id="ig" src="../assets/icons/instagram.png" width="30px" alt="Instagram">
+		</a>
+		<a href="https://www.tiktok.com">
+			<img id="tiktok" src="../assets/icons/tik-tok.png" width="30px" alt="TikTok">
+		</a>
+		<a href="https://www.facebook.com">
+			<img id="fb" src="../assets/icons/facebook.png" width="30px" alt="Facebook">
+		</a>
+		<a href="https://twitter.com">
+			<img id="twitter" src="../assets/icons/twitter.png" width="30px" alt="Twitter">
+		</a>
+	</div>
+	<div id="privacidad-terminos">
+		<a href="#" id="privacidad">AVISO DE PRIVACIDAD</a>
+		<a href="#">TERMINOS Y CONDICIONES</a>
+	</div>
+</footer>
+<!--JAVASCRIPT-->
+<script src="../scripts/header.js"></script>
+<script src="../scripts/alertas-register.js"></script>
+
+</html>

@@ -1,0 +1,133 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 85px;
+    margin: 2% 0 0 0;
+}
+
+/*Pequeño texto debajo del subtítulo*/
+.texto {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+h2,
+.texto {
+    text-align: center;
+    color: #274B92;
+}
+
+/*CARDS*/
+.contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2.5% 0;
+    /*CENTRAR LAS 4 CARDS*/
+}
+
+.card {
+    width: 267px;
+    /* background: white; */
+    background-image: radial-gradient(circle, #e4effa, #fff);
+    border: 2px solid #70AFE9;
+    border-radius: 6px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.titulo {
+    background: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+main ul li {
+    font-size: 20px;
+    text-align: left;
+}
+
+/*Boton*/
+.ctn-btn-evalu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.btn-evalu {
+    width: 129px;
+    height: 56px;
+    background-color: #1A6FAC;
+    color: #D7EFED;
+    font-size: 30px;
+    border-radius: 11px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+@media (max-width:425px) {
+    .subtitle {
+        font-size: 50px !important;
+    }
+
+    .texto {
+        font-size: 25px !important;
+    }
+
+    .titulo,
+    main ul li {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:768px) {
+    .subtitle {
+        font-size: 60px;
+    }
+
+    .texto {
+        font-size: 35px;
+    }
+
+    .titulo,
+    main ul li {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:320px) {
+    .subtitle {
+        font-size: 35px !important;
+    }
+
+    .texto {
+        font-size: 20px !important;
+    }
+
+    .titulo,
+    main ul li {
+        font-size: 15px;
+    }
+}
